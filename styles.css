@@ -1,23 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+     --primary-color: #00004A;
+     --secondary-color: #8AA6C9;
+}
+
+body {
+     margin: 0;
+     background-color: var(--secondary-color);
+     background-image: url("images/pic1.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-blend-mode: overlay;
+     font-family: 'Outfit', sans-serif;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     height: 100vh;
+}
+
+/* tools */
 textarea {
      display: block;
      height: 3rem;
-     width: 50%;
+     width: 30%;
      padding: 1rem;
      margin: 1rem auto;
-     border: 2px solid black;
+     border: 3px solid var(--primary-color);
+     border-radius: 1rem;
+}
+
+::placeholder {
+     font-size: 1rem;
 }
 
 button {
+     background-color: var(--primary-color);
+     color: white;
      display: block;
-     height: 2rem;
-     width: 5rem;
-     margin: auto;
+     height: 2.3rem;
+     width: 5.6rem;
+     margin: 2rem auto;
+     border: 1px solid transparent;
+     border-radius: 1rem;
+     font-size: 1rem;
+     font-family:'Outfit', sans-serif;
 }
 
 #output {
      height: 3rem;
-     width: 50%;
+     width: 30%;
      padding: 1rem;
      margin: 1rem auto;
-     border: 2px solid black;
+     border: 3px dashed var(--primary-color);
+     border-radius: 1rem;
+     background-color: white;
+     overflow: auto;
+     overflow-x: hidden;
+}
+
+/* Navigation */
+.navigation {
+     background-color: var(--primary-color);
+     color: white;
+     padding: 0.5rem;
+     border-bottom-left-radius: 1.5rem;
+}
+.navigation h1 {
+     text-align: center;
+     font-size: 2rem;
+}
+
+/* Main Content */
+.container-main {
+     height: 100%;
+}
+.header h1 {
+     color: var(--primary-color);
+     font-size: 2rem;
+     text-align: center;
+     margin-bottom: 3rem;
+     margin-top: 2rem;
+}
+
+/* Footer */
+.footer {
+     background-color: var(--primary-color);
+     border-top-right-radius: 1.5rem;
+     color: white;
+     padding: 1rem;
+}
+.footer h2 {
+     text-align: center;
 }
